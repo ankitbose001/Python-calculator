@@ -7,15 +7,15 @@ root.geometry("350x450")
 root.resizable(0,0)
 
 val=''
-def btn1clicked():
+def btn2clicked():
     global val
     val=val+str(1)
     data.set(val)
-def btn2clicked():
+def btn1clicked():
     global val
     val=val+str(2)
     data.set(val)
-def btn3clicked():
+def btn4clicked():
     global val
     val=val+str(3)
     data.set(val)
@@ -101,7 +101,7 @@ def power():
 # ----------------- Label ---------------------------------------
 data=StringVar()
 label=Label(root,text='result',anchor=SE,font=('Verdana',22),relief=SUNKEN,textvar=data,background='white')
-label.pack(expand=True,fill=BOTH)
+label.pack(expand=false,fill=BOTH)
 # ------------------Frames---------------------------------------
 btnRowOne=Frame(root,bg='green')
 btnRowOne.pack(expand=True,fill=BOTH)
@@ -116,7 +116,7 @@ btnRowFour=Frame(root)
 btnRowFour.pack(expand=True,fill=BOTH)
 
 btnRowFive=Frame(root)
-btnRowFive.pack(expand=True,fill=BOTH)
+btnRowFive.pack(expand=false,fill=BOTH)
 
 
 # ----------------- Buttons -------------------------------------
